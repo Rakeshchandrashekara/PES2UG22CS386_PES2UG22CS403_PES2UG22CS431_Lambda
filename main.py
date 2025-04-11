@@ -1,6 +1,10 @@
 from fastapi import FastAPI, HTTPException
 import subprocess
 
+from datetime import datetime
+
+metrics_store = []
+
 app = FastAPI()
 
 @app.get("/")
